@@ -13,17 +13,26 @@
       -->
 
       <div class="projects">
-        <div class="card w-80 bg-base-100 shadow-xl image-full">
-          <figure><img src="https://placehold.co/600x400" alt="Shoes" /></figure>
+        <div class="card bg-base-100 shadow-xl image-full"
+          v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
+        >
+          <figure><img :src="project.image_thumb" /></figure>
           <div class="card-body p-3">
-            <h2 class="card-title">rein portfolio</h2>
-            <p class="card-subtitle">Vue3, TailwindCSS, DaisyUI</p>
+            <h2 class="card-title">{{ project.title }}</h2>
+            <p class="card-subtitle">{{ project.subtitle }}</p>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary btn-xs">How I built it</button>
+              <button class="btn btn-primary btn-xs"
+                @click="openNotes(project)"
+              >
+                How I built it
+              </button>
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- /projects -->
+      <Modal
+        :content="project"
+      />
     </div>
   </header>
 
@@ -32,23 +41,38 @@
 
 <script lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { Project } from '@/models/IProject'
+import type { IProject } from '@/models/IProject'
+import { Projects } from '@/datasource/Projects'
+import Modal from '@/components/Modal.vue'
 
 export default {
   name: 'Portfolio',
+  components: {
+    Modal
+  },
   data() {
     return {
-      projects: [] as Project[]
+      projects: Projects as IProject[],
+      project: {} as IProject
     }
-  }
+  },
+
+  methods: {
+    openNotes(project: IProject) {
+      this.project = project
+    },
+  },
 }
 </script>
 
 
 <style scoped lang="postcss">
 .logo {
-  @apply text-center mb-3;
+  @apply text-center pt-5 pb-5 mb-3;
   font-size: 2em;
+}
+.projects {
+  @apply grid grid-cols-4 gap-4;
 }
 .projects .card-title {
   font-size: 1.5em;
