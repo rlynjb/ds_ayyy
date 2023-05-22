@@ -1,15 +1,14 @@
 <template>
   <div class="modal-component">
-      <!-- The button to open modal -->
-    <label for="my-modal-3" class="btn">open modal</label>
-
-    <!-- Put this part before </body> tag -->
-    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-    <div class="modal">
+    <div class="modal" v-if="showModal">
       <div class="modal-box relative">
-        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-        <h3 class="text-lg font-bold">{{ content.title }}</h3>
-        <p class="py-4">{{ content.subtitle }}</p>
+        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2"
+          @click="closeModal"
+        >
+          ✕
+        </label>
+        <h3 class="text-lg font-bold">{{ localContent.title }}</h3>
+        <p class="py-4">{{ localContent.subtitle }}</p>
       </div>
     </div>
   </div>
@@ -28,9 +27,38 @@ export default {
       }
     }
   },
+
+  data() {
+    return {
+      localContent: {} as IProject,
+      showModal: false,
+    }
+  },
+
+  watch: {
+    content(val) {
+      this.localContent = val
+      this.showModal = true
+    },
+  },
+
+  methods: {
+    closeModal() {
+      this.localContent = {} as IProject
+      this.showModal = false
+    },
+  },
 }
 </script>
 
 <style lang="postcss">
-
+.modal-component .modal {
+  background: rgba(0,0,0,0.8);
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+.modal-component .modal-box {
+  max-width: 50rem;
+}
 </style>
