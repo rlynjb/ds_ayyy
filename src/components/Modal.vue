@@ -7,8 +7,18 @@
         >
           ✕
         </label>
-        <h3 class="text-lg font-bold">{{ localContent.title }}</h3>
-        <p class="py-4">{{ localContent.subtitle }}</p>
+
+        <div class="info prose">
+          <h2 class="mb-0">{{ localContent.title }}</h2>
+          <p class="py-4">{{ localContent.subtitle }}</p>
+        </div>
+
+        <div class="notes prose" v-html="localContent.notes"></div>
+
+        <div class="attachments">
+          <img v-for="img in localContent.images"
+            :src="img" />
+        </div>
       </div>
     </div>
   </div>
@@ -59,6 +69,12 @@ export default {
   opacity: 1;
 }
 .modal-component .modal-box {
-  max-width: 50rem;
+  max-width: 80vw;
+}
+.modal-component .prose {
+  max-width: 100%;
+}
+.modal-component .attachments img {
+  width: 100%;
 }
 </style>

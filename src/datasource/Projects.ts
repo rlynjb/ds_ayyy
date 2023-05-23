@@ -1,23 +1,20 @@
 import type { Project } from "@/models/IProject"
 
+import { rein_portfolio } from "./rein_portfolio"
+
 /*
-  public id: string = nanoid()
-  public timestamp: number = Date.now()
-  public title: string = ''
-  public subtitle: string = ''
-  public link: string = ''
-  public image_thumb: string = ''
-  public notes: string = ''
-  public images: string[] = []
+  {
+    title: '',
+    subtitle: '',
+    link: '',
+    image_thumb: '',
+    notes: '',
+    images: ['']
+  }
 */
 
 export const Projects = [
-  {
-    title: 'rein portfolio',
-    subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
-    link: '/',
-    image_thumb: 'https://placehold.co/600x400',
-  },
+  rein_portfolio,
   {
     title: 'Badbeesh - Habit Tracker',
     subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site, Localstorage',
