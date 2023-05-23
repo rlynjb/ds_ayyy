@@ -9,7 +9,7 @@
         </label>
 
         <div class="info prose">
-          <h2 class="mb-0">{{ localContent.title }}</h2>
+          <h1 class="mb-0">{{ localContent.title }}</h1>
           <p class="py-4">{{ localContent.subtitle }}</p>
         </div>
 
@@ -17,7 +17,7 @@
 
         <div class="attachments">
           <img v-for="img in localContent.images"
-            :src="img" />
+            :src="imageURL(img)" />
         </div>
       </div>
     </div>
@@ -56,6 +56,9 @@ export default {
     closeModal() {
       this.localContent = {} as IProject
       this.showModal = false
+    },
+    imageURL(filename: String) {
+      return new URL('/src/assets/'+filename, import.meta.url).href
     },
   },
 }

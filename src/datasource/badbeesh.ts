@@ -1,7 +1,7 @@
-export const rein_portfolio = {
-  title: 'rein portfolio',
-  subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
-  link: '/',
+export const badbeesh = {
+  title: 'Badbeesh - Habit Tracker',
+  subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site, Localstorage',
+  link: 'https://badbeesh.netlify.app',
   image_thumb: 'https://placehold.co/600x400',
   notes: `
     <h3>Problem Definition</h3>
