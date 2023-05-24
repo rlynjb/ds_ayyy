@@ -72,12 +72,43 @@ export default {
   opacity: 1;
 }
 .modal-component .modal-box {
+  @apply p-8;
   max-width: 80vw;
 }
 .modal-component .prose {
   max-width: 100%;
 }
+.modal-component .attachments {
+  @apply mt-8;
+}
 .modal-component .attachments img {
   width: 100%;
+}
+.modal-component .notes section {
+  @apply rounded-lg bg-gray-800;
+  padding: 2em;
+  margin: 2em;
+}
+.modal-component .notes section .subnote {
+  @apply grid grid-cols-3 gap-4 grid-flow-row auto-rows-max;
+}
+.modal-component .notes section ul {
+  padding-left: 0.5em;
+  margin: 0;
+}
+
+.modal-component .notes section li {
+  margin: 0.5em;
+  line-height: 1.5;
+}
+.modal-component .notes section h3 {
+  @apply font-normal text-gray-500;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  margin: 0 0 1em;
+}
+.modal-component .notes section p {
+  margin: 0;
 }
 </style>
