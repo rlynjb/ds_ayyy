@@ -1,22 +1,12 @@
 <template>
   <main class="prose">
-    <div class="intro">
-      <h1>
-        hello, i'm Reina.<br>
-        <span class="prose-2xl">a software engineer specializing in front-end.</span>
-      </h1>
-      <hr>
-      <h2>my skillsets are</h2>
-    </div>
-    
     <div class="skills">
       <div class="item"
         v-for="skill in skills"
       >
-        <h4>{{ skill.name }}</h4> <progress class="progress progress-primary w-56" :value="skill.progress" max="100"></progress>
+        <h4>{{ skill.name }}</h4> <progress class="progress progress-primary" :value="skill.progress" max="100"></progress>
       </div>
     </div>
-    <hr>
   </main>
 </template>
 
@@ -42,15 +32,18 @@ export default {
 
 <style lang="postcss">
 main.prose {
-  @apply md:container md:mx-auto pt-10 pb-10;
-}
-.intro {
-  @apply text-center;
+  @apply md:container md:mx-auto pb-10 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 pb-14 mb-14;
 }
 .skills {
-  @apply grid grid-cols-3 gap-4;
+  @apply col-span-2 grid grid-cols-2 gap-4;
+}
+.skills .item h4 {
+  margin: 0;
 }
 .skills .item progress {
   width: 100%;
+}
+.skills .item .progress {
+  background: #1e1e1e;
 }
 </style>

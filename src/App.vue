@@ -1,50 +1,57 @@
 <template>
   <header>
     <div class="logo prose">
+      <h3>hello, i'm </h3>
       <h1>rein.</h1>
-    </div>
-
-    <div class="wrapper md:container md:mx-auto">
-      <!--
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      -->
-
-      <div class="projects">
-        <div class="card bg-base-100 shadow-xl image-full"
-          v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
-        >
-          <figure><img :src="randomImageURL(project.image_thumb)" /></figure>
-          <div class="card-body p-3">
-            <h2 class="card-title">{{ project.title }}</h2>
-            <p class="card-subtitle">{{ project.subtitle }}</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary btn-xs"
-                @click="gotoLink(project.link)"
-              >
-                Visit
-              </button>
-              <button class="btn btn-primary btn-xs"
-                @click="openNotes(project)"
-              >
-                How I built it
-              </button>
-            </div>
-          </div>
-        </div>
-      </div><!-- /projects -->
-      <Modal
-        :content="project"
-      />
+      <h5>a software engineer specializing in front-end</h5>
     </div>
   </header>
 
   <RouterView />
 
+  <div class="wrapper md:container md:mx-auto">
+    <!--
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+    -->
+    <div class="projects">
+      <div class="card bg-base-100 shadow-xl image-full"
+        v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
+      >
+        <figure><img :src="randomImageURL(project.image_thumb)" /></figure>
+        <div class="card-body p-3">
+          <h2 class="card-title">{{ project.title }}</h2>
+          <p class="card-subtitle">{{ project.subtitle }}</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary btn-xs"
+              @click="gotoLink(project.link)"
+            >
+              Visit
+            </button>
+            <button class="btn btn-primary btn-xs"
+              @click="openNotes(project)"
+            >
+              How I built it
+            </button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /projects -->
+    <Modal
+      :content="project"
+    />
+  </div>
+
   <footer>
-    feel free to contact me etc
+    <h3>
+      <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
+        target="_blank"
+      >
+        Resume
+      </a>
+    </h3>
   </footer>
 </template>
 
@@ -96,11 +103,18 @@ export default {
 
 <style scoped lang="postcss">
 .logo {
-  @apply text-center prose pt-5 pb-5 mb-3 md:container md:mx-auto;
+  @apply prose pt-14 pb-5 mb-3 md:container md:mx-auto;
   font-size: 2em;
 }
+.logo h1,
+.logo h3,
+.logo h5 {
+  @apply mr-6;
+  display: inline-block;
+  line-height: 1;
+}
 .projects {
-  @apply grid grid-cols-4 gap-4;
+  @apply grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4;
 }
 .projects .card-title {
   font-size: 1.5em;
@@ -110,6 +124,6 @@ export default {
 }
 
 footer {
-  @apply text-center p-10;
+  @apply prose pt-36 pb-20 md:container md:mx-auto;
 }
 </style>

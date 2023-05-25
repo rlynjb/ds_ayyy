@@ -92,9 +92,6 @@ export default {
   padding: 2em;
   margin: 2em;
 }
-.modal-component .notes section .subnote {
-  @apply grid grid-cols-3 gap-4 grid-flow-row auto-rows-max;
-}
 .modal-component .notes section ul {
   padding-left: 0.5em;
   margin: 0;
@@ -113,5 +110,11 @@ export default {
 }
 .modal-component .notes section p {
   margin: 0;
+}
+.modal-component .notes section .subnote {
+  @apply grid grid-cols-3 gap-4 grid-flow-row auto-rows-max;
+}
+.modal-component .notes section .subnote h4 {
+  margin-top: 0;
 }
 </style>
