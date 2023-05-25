@@ -16,7 +16,7 @@
         <div class="card bg-base-100 shadow-xl image-full"
           v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
         >
-          <figure><img :src="project.image_thumb" /></figure>
+          <figure><img :src="randomImageURL(project.image_thumb)" /></figure>
           <div class="card-body p-3">
             <h2 class="card-title">{{ project.title }}</h2>
             <p class="card-subtitle">{{ project.subtitle }}</p>
@@ -79,6 +79,15 @@ export default {
     },
     openNotes(project: IProject) {
       this.project = project
+    },
+    randomImageURL(filename?: String) {
+      const randomNumber = (min: any, max: any) => {
+        min = Math.ceil(min)
+        max = Math.floor(max)
+        return Math.floor(Math.random() * (max - min) + min)
+      }
+
+      return new URL('/src/assets/'+filename, import.meta.url).href + '/' + randomNumber(1, 11) + '.png'
     },
   },
 }

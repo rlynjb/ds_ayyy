@@ -2,7 +2,7 @@ export const rein_portfolio = {
   title: 'rein portfolio',
   subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
   link: '/',
-  image_thumb: 'https://placehold.co/600x400',
+  image_thumb: 'portfolio_thumbs',
   notes: `
     <section>
       <h3>Problem Definition</h3>

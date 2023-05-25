@@ -78,6 +78,9 @@ export default {
 .modal-component .prose {
   max-width: 100%;
 }
+.modal-component .info {
+  @apply text-center;
+}
 .modal-component .attachments {
   @apply mt-8;
 }

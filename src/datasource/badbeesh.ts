@@ -2,7 +2,7 @@ export const badbeesh = {
   title: 'Badbeesh - Habit Tracker',
   subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site, Localstorage',
   link: 'https://badbeesh.netlify.app',
-  image_thumb: 'https://placehold.co/600x400',
+  image_thumb: 'portfolio_thumbs',
   notes: `
     <h3>Problem Definition</h3>
     <p>A portfolio that can easily be updated with Projects, Experience, Company worked for, title, and job details in list format. It will have a simple login system. It will have a straight forward design and layout.</p>
