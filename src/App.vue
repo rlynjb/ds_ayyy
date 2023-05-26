@@ -75,13 +75,15 @@ export default {
 
   methods: {
     gotoLink(link?: String) {
+      let urlToString = link?.toString()
+
       if (link?.includes('http')) {
-        window.open(link, '_blank')
+        window.open(urlToString, '_blank')
         return
       }
 
       this.$router.push({
-        path: link
+        path: urlToString as string
       })
     },
     openNotes(project: IProject) {
