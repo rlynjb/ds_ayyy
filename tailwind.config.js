@@ -5,10 +5,21 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [
     require("daisyui"),
     require('@tailwindcss/typography')
   ],
+  daisyui: {
+    themes: [
+      {
+        dark: {
+          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+          primary: '#6d28d9',
+        },
+      }
+    ],
+  },
 }
