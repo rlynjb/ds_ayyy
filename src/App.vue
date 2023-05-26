@@ -96,7 +96,7 @@ export default {
         return Math.floor(Math.random() * (max - min) + min)
       }
 
-      return new URL('/assets/'+filename, import.meta.url).href + '/' + randomNumber(1, 11) + '.png'
+      return new URL('../assets/'+filename, import.meta.url).href + '/' + randomNumber(1, 11) + '.png'
     },
   },
 }
