@@ -58,7 +58,7 @@ export default {
       this.showModal = false
     },
     imageURL(filename: String) {
-      return new URL('/src/assets/'+filename, import.meta.url).href
+      return new URL('/portfolio_notes/'+filename, import.meta.url).href
     },
   },
 }
