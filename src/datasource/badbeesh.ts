@@ -1,71 +1,95 @@
 export const badbeesh = {
   title: 'Badbeesh - Habit Tracker',
-  subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site, Localstorage',
-  link: 'https://badbeesh.netlify.app',
+  subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
+  link: '/',
   image_thumb: 'portfolio_thumbs',
   notes: `
-    <h3>Problem Definition</h3>
-    <p>A portfolio that can easily be updated with Projects, Experience, Company worked for, title, and job details in list format. It will have a simple login system. It will have a straight forward design and layout.</p>
+    <section>
+      <h3>Problem Definition</h3>
+      <p>An app that tracks daily self-care routine such as Food calorie intake, workouts, face/skin care routine. These are the basic features, but we would want to expand the app with a lookbook/clothing idea generator. This feature will give you an idea what to wear for the day (if you don’t feel like making decisions). It will have a color shirt/pants/socks/shoes combination generator. That’s pretty much the gist of the feature.</p>
+    </section>
 
-    <h3>Requirements</h3>
-    <ul>
-      <li>R1. Admin can create, update, delete a project</li>
-      <li>R2. Admin can create, update, delete an experience</li>
-      <li>R3. A Project will consist of Title, Link, and Image</li>
-      <li>R4. An experience will consist of Company, Job title, and Job description and list</li>
-      <li>R5. Admin can update an experience’s content (company, job title, job description and list)</li>
-      <li>R6. Admin can login</li>
-      <li>R7. All data will be displayed as public</li>
-      <li>R8. User can change public display of content by DSA data visualization</li>
-      <li>R9. User can view Project Notes</li>
-    </ul>
+    <section>
+      <h3>Requirements</h3>
+      <ul>
+        <li>R1. It’s going to have 3 categories (Food/calorie intake, workouts, skin care routine).</li>
+        <li>R2. Users are able to track daily food/calories intake.</li>
+        <li>R3. Users are able to track daily workouts.</li>
+        <li>R4. Users are able to track daily skin care routine.</li>
+        <li>R5. Users are able to view previous “tracked items” in X days.</li>
+        <li>R6. Users are able to view how many calories they consumed throughout the day.</li>
+        <li>R7. The system should remember what previous items the User entered. Making entering data for Users intuitive.</li>
+        <li>R8. Users should be able to create an account or login.</li>
+        <li>R9. Users are only able to view 60 days of previous data or history.</li>
+      </ul>
+    </section>
 
-    <h3>Guess a “Design approach” and “Design Pattern”</h3>
-    <p>I’ll approach it bottom-up. Focusing and building its small components first. Design pattern is unknown yet. It’s difficult for me to guess. I’ll need to familiarize myself with different design patterns.</p>
+    <section>
+      <h3>Guess a “Design approach” and “Design Pattern”</h3>
+      <p>I’ll approach it bottom-up. Focusing and building its small components first.
+      Design pattern is unknown yet. It’s difficult for me to guess. I’ll need to familiarize myself with different design patterns.
+      </p>
+    </section>
 
-    <h3>Determine Actors (Primary, Secondary) and its Use Cases.</h3>
-    <p>
-      - Primary are humans or external systems that interact with the system.<br>
-      - Secondary are the ones used by the system to assist Primary actors in a use case.
-    </p>
+    <section>
+      <h3>Determine Actors (Primary, Secondary) and its Use Cases.</h3>
 
-    <h4>Primary actors:</h4>
-    <ul>
-      <li>
-        <i>Admin</i>
-        <ul>
-          <li>Create a project</li>
-          <li>Update a project</li>
-          <li>Delete a project</li>
-          <li>Create an experience</li>
-          <li>Update an experience</li>
-          <li>Delete an experience</li>
-          <li>Login into system</li>
-        </ul>
-      </li>
-      <li>
-        <i>User</i>
-        <ul>
-          <li>View all contents</li>
-          <li>Can click on a project title or image</li>
-          <li>Can switch display of content by variety DSA data visualization</li>
-          <li>Can view Notes associated with a Project</li>
-        </ul>
-      </li>
-    </ul>
+      <div class="subnote">
+        <div class="notecol">
+          <h4>Customer (Primary)</h4>
+          <ul>
+            <li>
+              Able to Create an account
+            </li>
+            <li>
+              Able to Login/Logout
+            </li>
+            <li>
+              View all 3 categories in one page.
+            </li>
+            <li>
+              Add/edit/delete daily items in Food/Calorie intake.
+            </li>
+            <li>
+              Add/edit/delete daily items in Workout.
+            </li>
+            <li>
+              Add/edit/delete daily items in the Skin-Care routine.
+            </li>
+            <li>
+              View X days of previous items
+            </li>
+            <li>
+              View how many calories consumed in the Food/Calorie intake section.
+            </li>
+          </ul>
+        </div>
 
-    <h4>Secondary actors:</h4>
-    <ul>
-      <li>
-        <i>System</i>
-        <ul>
-          <li>Store Project’s content (Title, Link, Image)</li>
-          <li>Store Experience content (Company, Job Title, Job description, Job List)</li>
-        </ul>
-      </li>
-    </ul>
+        <div class="notecol">
+          <h4>System (Secondary)</h4>
+          <ul>
+            <li>
+              Store Food/Calorie items and its fields with timestamp in DB.
+            </li>
+            <li>
+              Store Workout items and its fields with timestamp in DB.
+            </li>
+            <li>
+              Store Skin-Care routine items and its fields with timestamp in DB.
+            </li>
+            <li>
+              Check if an item (with its fields) already exists in DB and auto-completes entry.
+            </li>
+            <li>
+              Check if the user is registered, if not, automatically create a new account.            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   `,
   images: [
-    'portfolio.png'
+    'badbeesh_usecase_diagram.png',
+    'badbeesh_class_diagram.png'
   ]
 }

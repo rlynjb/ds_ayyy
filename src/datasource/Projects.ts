@@ -20,14 +20,20 @@ export const Projects = [
   {
     title: 'SpaceX Seat Reservation',
     subtitle: 'React, Apollo GraphQL, Netlify Functions, MongoDB',
-    link: '/',
+    link: 'https://spacex-reserve-seat.netlify.app/',
     image_thumb: 'portfolio_thumbs',
+    images: [
+      'spacex_apollo_graphql.png'
+    ]
   },
   {
     title: 'UI Component Design System',
     subtitle: 'Vue3, TailwindCSS, DaisyUI, Storybook, Netlify',
-    link: '/',
+    link: 'https://ui-styleguide.netlify.app/',
     image_thumb: 'portfolio_thumbs',
+    images: [
+      'storybook_plan.png'
+    ]
   },
   {
     title: 'Security Operations Audit Tool',

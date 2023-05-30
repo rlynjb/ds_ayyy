@@ -1,5 +1,5 @@
 export const rein_portfolio = {
-  title: 'rein portfolio',
+  title: 'Codebook - My Portfolio',
   subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
   link: '/',
   image_thumb: 'portfolio_thumbs',

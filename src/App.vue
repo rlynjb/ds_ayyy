@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="logo prose">
+    <div class="logo">
       <h3>hello, i'm </h3>
       <h1>rein.</h1>
       <h5>a software engineer specializing in front-end</h5>
@@ -9,7 +9,7 @@
 
   <RouterView />
 
-  <div class="wrapper md:container md:mx-auto">
+  <div class="wrapper md:container sm:container md:mx-auto">
     <!--
     <nav>
       <RouterLink to="/">Home</RouterLink>
@@ -104,16 +104,27 @@ export default {
 
 
 <style scoped lang="postcss">
-.logo {
+header,
+main,
+.projects,
+footer {
+  padding: 0 2em;
+}
+header {
   @apply prose pt-14 pb-5 mb-3 md:container md:mx-auto;
+}
+.logo {
   font-size: 2em;
 }
 .logo h1,
 .logo h3,
 .logo h5 {
-  @apply mr-6;
+  @apply mr-6 mb-0;
   display: inline-block;
   line-height: 1;
+}
+main {
+  @apply pt-8 pb-12;
 }
 .projects {
   @apply grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4;

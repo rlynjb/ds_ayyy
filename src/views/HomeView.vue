@@ -1,31 +1,31 @@
 <template>
   <main class="skills-tracker prose">
     <div class="skills">
-      <h5>Coding/Foundation</h5>
+      <h4>Coding/Foundation</h4>
       <div class="item"
         v-for="skill in coding_skills"
       >
-        <h4>{{ skill.name }}</h4>
+        <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
       </div>
     </div>
 
     <div class="skills">
-      <h5>Front-end</h5>
+      <h4>Front-end</h4>
       <div class="item"
         v-for="skill in frontend_skills"
       >
-        <h4>{{ skill.name }}</h4>
+        <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
       </div>
     </div>
 
     <div class="skills">
-      <h5>Back-end/Tools</h5>
+      <h4>Back-end/Tools</h4>
       <div class="item"
         v-for="skill in backend_skills"
       >
-        <h4>{{ skill.name }}</h4>
+        <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
       </div>
     </div>
@@ -40,8 +40,8 @@ export default {
       coding_skills: [
         { name: 'JavaScript ES6', progress: '100' },
         { name: 'Typescript', progress: '50' },
-        { name: 'Data Structure & Algorithm', progress: '30' },
-        { name: 'System Design', progress: '30' },
+        { name: 'Data Structure & Algorithm', progress: '40' },
+        { name: 'System Design', progress: '60' },
         { name: 'CSS3' },
         { name: 'PostCSS' },
         { name: 'HTML5' },
@@ -59,12 +59,9 @@ export default {
       ],
       backend_skills: [
         { name: 'Mongodb', progress: '30' },
-        { name: 'Apollo GraphQL', progress: '30' },
-        { name: 'Commandline', progress: '30' },
-        { name: 'Vim', progress: '30' },
-        { name: 'Netlify' },
-        { name: 'Netlify Functions' },
-        { name: 'Git' },
+        { name: 'Apollo GraphQL', progress: '50' },
+        { name: 'Commandline / Git / Vim', progress: '80' },
+        { name: 'Netlify & Serverless Functions' },
         { name: 'Docker' },
         { name: 'Jenkins' },
         { name: 'FaunaDB' },
@@ -76,14 +73,22 @@ export default {
 
 <style lang="postcss">
 .skills-tracker {
-  @apply md:container md:mx-auto pb-10 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 pb-14 mb-14;
+  @apply container mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-12 pb-14 mb-14;
 }
 .skills {
   @apply col-span-1 grid grid-cols-1 gap-4 content-start;
 }
-.skills .item h4 {
+.skills h4 {
+  @apply col-span-1;
+  text-transform: uppercase;
+}
+.skills .item {
+  line-height: 1;;
+}
+.skills .item h5 {
   margin: 0;
   line-height: 1;
+  font-size: 0.9em;
 }
 .skills .item progress {
   width: 100%;
