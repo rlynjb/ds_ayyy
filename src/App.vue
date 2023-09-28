@@ -6,8 +6,12 @@
       <h5>a software engineer specializing in front-end</h5>
     </div>
     <p>
-      I’m a software engineer specializing in building (and occasionally designing) digital experiences. Currently, I’m focused on extending features, refactoring, and rewriting code on existing applications at Switch.
+      I’m a software engineer specializing in building (and occasionally designing) digital experiences. Currently, I’m focused on building internal apps, extending features, refactoring, and rewriting code on existing applications used by employees at Switch.
     </p>
+
+    <h5 class="skills-title">
+      Below are skills I've gained over the years I've worked in the field
+    </h5>
   </header>
 
   <RouterView />
@@ -19,11 +23,14 @@
       <RouterLink to="/about">About</RouterLink>
     </nav>
     -->
+    <h5 class="projects-title">
+      and these are some projects I've built and worked with other developers.
+    </h5>
     <div class="projects">
       <div class="card bg-base-100 shadow-xl image-full"
         v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
       >
-        <figure><img :src="randomImageURL(project.image_thumb)" /></figure>
+        <figure><img :src="imageURL(project.image_thumb)" /></figure>
         <div class="card-body p-3">
           <h2 class="card-title">{{ project.title }}</h2>
           <p class="card-subtitle">{{ project.subtitle }}</p>
@@ -46,7 +53,7 @@
       :content="project"
     />
 
-    <h2 class="exp-title">Here's an overview of some of my exprience</h2>
+    <h2 class="exp-title">Here's some of my exprience</h2>
     <div class="brief-experience">
       <div
         v-for="(exp, expIndex) in experience"
@@ -67,7 +74,7 @@
     </div>
 
     <h2 class="exp-resume">
-      and my
+      and for complete history, here's my
       <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
         target="_blank"
       >
@@ -171,6 +178,9 @@ export default {
     openNotes(project: IProject) {
       this.project = project
     },
+    imageURL(filename) {
+      return new URL('/portfolio_thumbs', import.meta.url).href + '/' + filename
+    },
     randomImageURL(filename?: String) {
       const randomNumber = (min: any, max: any) => {
         min = Math.ceil(min)
@@ -208,6 +218,15 @@ header {
 main {
   @apply pt-8 pb-12;
 }
+
+.skills-title {
+  font-size: 1.5em;
+  margin: 2em 0 0;
+}
+.projects-title {
+  font-size: 2em;
+  margin: 0 1em 2em;
+}
 .projects {
   @apply grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4;
 }
@@ -224,7 +243,7 @@ main {
 }
 .exp-resume {
   font-size: 1.5em;
-  margin: 2em 1em 0;
+  margin: 2em 1em 0.5em;
 }
 .exp-resume a {
   font-weight: 700;
