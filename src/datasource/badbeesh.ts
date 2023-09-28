@@ -1,5 +1,5 @@
 export const badbeesh = {
-  title: 'Badbeesh - Habit Tracker',
+  title: 'Habit Tracker',
   subtitle: 'Vue3, TailwindCSS, DaisyUI, Netlify, Static Site',
   link: '/',
   image_thumb: 'portfolio_thumbs',

@@ -34,11 +34,5 @@ export const Projects = [
     images: [
       'storybook_plan.png'
     ]
-  },
-  {
-    title: 'Security Operations Audit Tool',
-    subtitle: 'Vue3, Custom UI Component Design System',
-    link: '/',
-    image_thumb: 'portfolio_thumbs',
   }
 ]
