@@ -15,8 +15,15 @@ import { badbeesh } from "./badbeesh"
 */
 
 export const Projects = [
-  rein_portfolio,
-  badbeesh,
+  {
+    title: 'UI Component Design System',
+    subtitle: 'System Design, DSA, Vue3, TailwindCSS, DaisyUI, Storybook, Netlify',
+    link: 'https://ui-styleguide.netlify.app/',
+    image_thumb: 'portfolio_thumbs',
+    images: [
+      'storybook_plan.png'
+    ]
+  },
   {
     title: 'SpaceX Seat Reservation',
     subtitle: 'React, Apollo GraphQL, Netlify Functions, MongoDB',
@@ -26,10 +33,39 @@ export const Projects = [
       'spacex_apollo_graphql.png'
     ]
   },
+  rein_portfolio,
+  badbeesh,
   {
-    title: 'UI Component Design System',
-    subtitle: 'Vue3, TailwindCSS, DaisyUI, Storybook, Netlify',
-    link: 'https://ui-styleguide.netlify.app/',
+    title: 'Kobalt Tools - Personalized Ratchet Set',
+    subtitle: 'Laravel, JavaScript',
+    link: 'https://www.kobalttools.com/mechanics-tools/personalized-ratchet-set',
+    image_thumb: 'portfolio_thumbs',
+    images: [
+      'storybook_plan.png'
+    ]
+  },
+  {
+    title: 'Golden Entertainment',
+    subtitle: 'Wordpress',
+    link: 'https://www.goldenent.com/',
+    image_thumb: 'portfolio_thumbs',
+    images: [
+      'storybook_plan.png'
+    ]
+  },
+  {
+    title: "PT's Tavern",
+    subtitle: 'Wordpress',
+    link: 'https://www.ptstaverns.com/',
+    image_thumb: 'portfolio_thumbs',
+    images: [
+      'storybook_plan.png'
+    ]
+  },
+  {
+    title: 'Persopo - Public Record Search',
+    subtitle: 'Ember.js, Golang',
+    link: 'https://persopo.com/',
     image_thumb: 'portfolio_thumbs',
     images: [
       'storybook_plan.png'

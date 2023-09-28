@@ -5,6 +5,9 @@
       <h1>rein.</h1>
       <h5>a software engineer specializing in front-end</h5>
     </div>
+    <p>
+      I’m a software engineer specializing in building (and occasionally designing) digital experiences. Currently, I’m focused on extending features, refactoring, and rewriting code on existing applications at Switch.
+    </p>
   </header>
 
   <RouterView />
@@ -42,16 +45,47 @@
     <Modal
       :content="project"
     />
-  </div>
 
-  <footer>
-    <h3>
+    <h2 class="exp-title">Here's an overview of some of my exprience</h2>
+    <div class="brief-experience">
+      <div
+        v-for="(exp, expIndex) in experience"
+        :key="'exp-'+expIndex"
+        class="exp"
+      >
+        <h3>{{ exp.company }}</h3>
+        <h6>{{ exp.date }}</h6>
+        <ul>
+          <li
+            v-for="(desc, descIndex) in exp.desc"
+            :key="'desc-'+descIndex"
+          >
+            {{ desc }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="exp-resume">
+      and my
       <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
         target="_blank"
       >
-        Resume
+        Resume &#10003;
       </a>
-    </h3>
+    </h2>
+
+    <h5 class="exp-contact">
+      I’m currently looking for any new opportunities, preferably outside of Las Vegas. If you have a question or just want to say hi, feel free to contact me via
+      <a href="https://www.linkedin.com/in/rlynpro/"
+        target="_blank"
+      >
+        LinkedIn &#10003;
+      </a>
+    </h5>
+  </div>
+
+  <footer>
   </footer>
 </template>
 
@@ -69,7 +103,55 @@ export default {
   data() {
     return {
       projects: Projects as IProject[],
-      project: {} as IProject
+      project: {} as IProject,
+      experience: [
+        {
+          company: 'Switch',
+          date: 'August 2017 - Present // Las Vegas, NV',
+          desc: [
+            'Develop internal apps using Vue.js consuming and handling thousands of data.',
+            'Communicate with developers & managers on a daily basis to build features from ideation to production.',
+            'Built impressive landing pages using CSS responsive techniques and design concepts',
+            'Occasionally design UI/UX based on project requirements.',
+            'Occasionally maintain customer facing websites using Wordpress.'
+          ]
+        },
+        {
+          company: 'JS Products',
+          date: 'June 2016 - August 2017 // Las Vegas, NV',
+          desc: [
+            'Developed all public facing websites for stakeholders using Grav, Laravel, Zurb Foundation.',
+            'Collaborated with UI/UX Designers using InVision while helping the company keep up to date with current web technology.',
+            'Developed a theme starter kit and implemented it on projects.',
+            'Developed a customer-facing web app for Kobalttools.com using JavaScript.'
+          ]
+        },
+        {
+          company: 'Brydan Solutions',
+          date: 'April 2015 - June 2016 // Las Vegas, NV',
+          desc: [
+            "Designed websites using Divi theme and researched plugins that fit required functionality.",
+            "Developed a customer-facing web app using JavaScript and PHP when necessary.",
+            "Clients included Golden Entertainment (goldent.com), PT’s Pub Las Vegas (pteglv.com)"
+          ]
+        },
+        {
+          company: 'Gravitas Works',
+          date: 'May 2014 - March 2015 // Las Vegas, NV',
+          desc: [
+            "Gained coding experience through pair programming and guidance from our mentor/CTO",
+            "Worked on solving bugs/performance issues",
+            "Documented work and communicate issues when they arise",
+            "Researched and wrote code snippet Google authentication using Golang and JWT",
+            "Wrote code using Golang to interact with APIs",
+            "Wrote code for Web scraper using Ruby and Regex",
+            "Convert Ember.js web application to use Ember-CLI",
+            "Researched latest news/articles and version releases of Ember.js",
+            "Wrote a responsive grid system from scratch to avoid bloated CSS",
+            "Researched and implemented BEM and OOCSS to organize CSS"
+          ]
+        }
+      ],
     }
   },
 
@@ -127,12 +209,50 @@ main {
   @apply pt-8 pb-12;
 }
 .projects {
-  @apply grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4;
+  @apply grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4;
 }
 .projects .card-title {
   font-size: 1.5em;
 }
 .projects .card-subtitle {
+  font-size: 0.9em;
+}
+
+.exp-title {
+  font-size: 2em;
+  margin: 4em 1em 0;
+}
+.exp-resume {
+  font-size: 1.5em;
+  margin: 2em 1em 0;
+}
+.exp-resume a {
+  font-weight: 700;
+}
+.exp-contact {
+  font-size: 1.3em;
+  margin: 0 1.2em;
+}
+.exp-contact a {
+  font-weight: 700;
+}
+.brief-experience .exp {
+  margin: 2em;
+}
+.brief-experience .exp h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.brief-experience .exp h6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.brief-experience .exp ul {
+  list-style: circle;
+  margin-left: 1em;
+}
+.brief-experience .exp ul li {
   font-size: 0.9em;
 }
 
