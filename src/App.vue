@@ -178,7 +178,7 @@ export default {
     openNotes(project: IProject) {
       this.project = project
     },
-    imageURL(filename) {
+    imageURL(filename?: String) {
       return new URL('/portfolio_thumbs', import.meta.url).href + '/' + filename
     },
     randomImageURL(filename?: String) {
