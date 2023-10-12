@@ -45,30 +45,30 @@ export default {
     return {
       coding_skills: [
         { name: 'JavaScript ES6', progress: '100' },
-        { name: 'Typescript', progress: '50' },
-        { name: 'Data Structure & Algorithm', progress: '40' },
-        { name: 'System Design', progress: '60' },
-        { name: 'CSS3', progress:"100" },
-        { name: 'PostCSS', progress: "50" },
         { name: 'HTML5', progress: "100" },
+        { name: 'CSS3', progress:"100" },
+        { name: 'Typescript', progress: '70' },
+        { name: 'System Design', progress: '60' },
+        { name: 'Data Structure & Algorithm', progress: '40' },
+        { name: 'PostCSS', progress: "50" }
       ],
       frontend_skills: [
         { name: 'Vue3', progress: '100' },
         { name: 'TailwindCSS/DaisyUI', progress: '90' },
         { name: 'Reactjs', progress: '30' },
-        { name: 'Nuxt3' },
-        { name: 'Quasar Framework' },
-        { name: 'Vuetify' },
-        { name: 'D3.js' },
-        { name: 'Zurb Foundation' },
-        { name: 'Grav' }
+        { name: 'Nuxt3', progress: '70' },
+        { name: 'Quasar Framework', progress: '80' },
+        { name: 'Vuetify', progress: '50' },
+        { name: 'D3.js', progress: '30' },
+        { name: 'Zurb Foundation', progress: '40' },
+        { name: 'Grav', progress: '50' }
       ],
       backend_skills: [
-        { name: 'Laravel', progress: "30"},
+        { name: 'Laravel', progress: "50"},
         { name: 'Mongodb', progress: '30' },
         { name: 'Apollo GraphQL', progress: '50' },
         { name: 'Commandline / Git / Vim', progress: '80' },
-        { name: 'Netlify & Serverless Functions' },
+        { name: 'Netlify & Serverless Functions', progress: '50' },
         { name: 'Docker' },
         { name: 'Jenkins' },
         { name: 'FaunaDB' },
