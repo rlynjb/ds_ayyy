@@ -17,12 +17,6 @@
   <RouterView />
 
   <div class="wrapper md:container sm:container md:mx-auto">
-    <!--
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-    -->
     <h5 class="projects-title">
       and these are some projects I've built and worked with other developers.
     </h5>

@@ -2,8 +2,10 @@
   <main class="skills-tracker prose">
     <div class="skills">
       <h4>Coding/Foundation</h4>
-      <div class="item"
-        v-for="skill in coding_skills"
+      <div
+        v-for="(skill, sIndex) in coding_skills"
+        :key="'codingskills-'+sIndex"
+        class="item"
       >
         <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
@@ -12,8 +14,10 @@
 
     <div class="skills">
       <h4>Front-end</h4>
-      <div class="item"
-        v-for="skill in frontend_skills"
+      <div
+        v-for="(skill, sIndex) in frontend_skills"
+        :key="'frontendskills-'+sIndex"
+        class="item"
       >
         <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
@@ -22,8 +26,10 @@
 
     <div class="skills">
       <h4>Back-end/Tools</h4>
-      <div class="item"
-        v-for="skill in backend_skills"
+      <div
+        v-for="(skill, sIndex) in backend_skills"
+        :key="'backendskills-'+sIndex"
+        class="item"
       >
         <h5>{{ skill.name }}</h5>
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
@@ -42,9 +48,9 @@ export default {
         { name: 'Typescript', progress: '50' },
         { name: 'Data Structure & Algorithm', progress: '40' },
         { name: 'System Design', progress: '60' },
-        { name: 'CSS3' },
-        { name: 'PostCSS' },
-        { name: 'HTML5' },
+        { name: 'CSS3', progress:"100" },
+        { name: 'PostCSS', progress: "50" },
+        { name: 'HTML5', progress: "100" },
       ],
       frontend_skills: [
         { name: 'Vue3', progress: '100' },
@@ -58,6 +64,7 @@ export default {
         { name: 'Grav' }
       ],
       backend_skills: [
+        { name: 'Laravel', progress: "30"},
         { name: 'Mongodb', progress: '30' },
         { name: 'Apollo GraphQL', progress: '50' },
         { name: 'Commandline / Git / Vim', progress: '80' },
