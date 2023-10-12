@@ -47,21 +47,21 @@ export default {
         { name: 'JavaScript ES6', progress: '100' },
         { name: 'HTML5', progress: "100" },
         { name: 'CSS3', progress:"100" },
-        { name: 'Typescript', progress: '70' },
         { name: 'System Design', progress: '60' },
-        { name: 'Data Structure & Algorithm', progress: '40' },
-        { name: 'PostCSS', progress: "50" }
+        { name: 'Data Structure & Algorithm', progress: '40' }
       ],
       frontend_skills: [
         { name: 'Vue3', progress: '100' },
         { name: 'TailwindCSS/DaisyUI', progress: '90' },
+        { name: 'Typescript', progress: '70' },
+        { name: 'PostCSS', progress: "50" },
         { name: 'Reactjs', progress: '30' },
         { name: 'Nuxt3', progress: '70' },
         { name: 'Quasar Framework', progress: '80' },
         { name: 'Vuetify', progress: '50' },
         { name: 'D3.js', progress: '30' },
         { name: 'Zurb Foundation', progress: '40' },
-        { name: 'Grav', progress: '50' }
+        { name: 'Grav', progress: '50' },
       ],
       backend_skills: [
         { name: 'Laravel', progress: "50"},
