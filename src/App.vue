@@ -77,7 +77,7 @@
     </h2>
 
     <h5 class="exp-contact">
-      I’m currently looking for any new opportunities, preferably outside of Las Vegas. If you have a question or just want to say hi, feel free to contact me via
+      I’m currently looking for new opportunities, preferably outside of Las Vegas. If you have a question or just want to say hi, feel free to contact me via
       <a href="https://www.linkedin.com/in/rlynpro/"
         target="_blank"
       >
@@ -127,6 +127,7 @@ export default {
             'Developed a customer-facing web app for Kobalttools.com using JavaScript.'
           ]
         },
+        /*
         {
           company: 'Brydan Solutions',
           date: 'April 2015 - June 2016 // Las Vegas, NV',
@@ -152,6 +153,7 @@ export default {
             "Researched and implemented BEM and OOCSS to organize CSS"
           ]
         }
+        */
       ],
     }
   },
