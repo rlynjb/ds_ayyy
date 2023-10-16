@@ -53,6 +53,7 @@ export default {
         { name: 'JavaScript ES6', progress: '100' },
         { name: 'HTML5', progress: "100" },
         { name: 'CSS3', progress:"100" },
+        { name: 'UI Design System', progress: '30' },
         { name: 'System Design', progress: '60' },
         { name: 'Data Structure & Algorithm', progress: '40' }
       ],
@@ -64,6 +65,7 @@ export default {
         { name: 'TailwindCSS/DaisyUI', progress: '90' },
         { name: 'Typescript', progress: '70' },
         { name: 'PostCSS', progress: "50" },
+        { name: 'Storybook', progress: '30' },
         { name: 'Quasar Framework', progress: '80' },
         { name: 'Vuetify', progress: '50' },
         { name: 'Grav', progress: '50' },
