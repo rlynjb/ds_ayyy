@@ -53,7 +53,7 @@ export default {
       frontend_skills: [
         { name: 'Vue3', progress: '100' },
         { name: 'Reactjs', progress: '30' },
-        { name: 'Emerjs', progress: '30' },
+        { name: 'Emberjs', progress: '30' },
         { name: 'Nuxt3', progress: '70' },
         { name: 'TailwindCSS/DaisyUI', progress: '90' },
         { name: 'Typescript', progress: '70' },
