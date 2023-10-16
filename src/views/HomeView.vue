@@ -8,7 +8,9 @@
         class="item"
       >
         <h5>{{ skill.name }}</h5>
+        <!--
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
+        -->
       </div>
     </div>
 
@@ -20,7 +22,9 @@
         class="item"
       >
         <h5>{{ skill.name }}</h5>
+        <!--
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
+        -->
       </div>
     </div>
 
@@ -32,7 +36,9 @@
         class="item"
       >
         <h5>{{ skill.name }}</h5>
+        <!--
         <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
+        -->
       </div>
     </div>
   </main>
