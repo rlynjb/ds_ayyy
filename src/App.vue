@@ -21,7 +21,7 @@
       and these are some projects I've built and worked with other developers..
     </h5>
     <div class="projects">
-      <div class="card bg-base-100 shadow-xl image-full"
+      <div class="card bg-base-100 shadow-xl image-full rounded-none"
         v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
       >
         <figure><img :src="imageURL(project.image_thumb)" /></figure>
@@ -29,12 +29,12 @@
           <h2 class="card-title">{{ project.title }}</h2>
           <p class="card-subtitle">{{ project.subtitle }}</p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary btn-xs"
+            <button class="btn btn-secondary btn-xs rounded-none"
               @click="gotoLink(project.link)"
             >
               Visit
             </button>
-            <button class="btn btn-primary btn-xs"
+            <button class="btn btn-secondary btn-xs rounded-none"
               @click="openNotes(project)"
             >
               How I built it
@@ -211,6 +211,9 @@ main {
 .projects {
   @apply grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4;
 }
+.projects .card.image-full:before {
+  border-radius: 0;
+}
 .projects .card-title {
   font-size: 1.5em;
 }
@@ -241,6 +244,7 @@ main {
   margin: 2em;
 }
 .brief-experience .exp h3 {
+  @apply text-secondary;
   font-size: 1.3em;
   font-weight: 600;
 }

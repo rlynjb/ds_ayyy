@@ -136,7 +136,7 @@ main.skills-tracker {
   @apply col-span-1 grid grid-cols-1 gap-4 content-start;
 }
 .skills h4 {
-  @apply col-span-1;
+  @apply col-span-1 text-secondary;
   text-transform: uppercase;
 }
 .skills .item {
