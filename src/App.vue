@@ -71,6 +71,7 @@
       and for complete history, here's my
       <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
         target="_blank"
+        class="text-primary"
       >
         Resume &#10003;
       </a>
@@ -80,6 +81,7 @@
       I’m currently looking for new opportunities, preferably outside of Las Vegas. If you have a question or just want to say hi, feel free to contact me via
       <a href="https://www.linkedin.com/in/rlynpro/"
         target="_blank"
+        class="text-primary"
       >
         LinkedIn &#10003;
       </a>
@@ -189,17 +191,22 @@ header {
   display: inline-block;
   line-height: 1;
 }
+.logo h1 {
+  @apply text-primary;
+}
 main {
   @apply pt-8 pb-12;
 }
 
 .skills-title {
+  @apply text-primary;
   font-size: 1.5em;
   margin: 2em 0 0;
 }
 .projects-title {
+  @apply text-primary;
   font-size: 2em;
-  margin: 0 1em 2em;
+  margin: 0 1em 1em;
 }
 .projects {
   @apply grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4;
@@ -212,6 +219,7 @@ main {
 }
 
 .exp-title {
+  @apply text-primary;
   font-size: 2em;
   margin: 4em 1em 0;
 }

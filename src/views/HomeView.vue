@@ -129,8 +129,8 @@ export default {
 </script>
 
 <style lang="postcss">
-.skills-tracker {
-  @apply container mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-1 gap-12 pb-14 mb-14;
+main.skills-tracker {
+  @apply container mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-1 gap-12 pb-14 mb-14 pt-0;
 }
 .skills {
   @apply col-span-1 grid grid-cols-1 gap-4 content-start;
