@@ -177,7 +177,7 @@ footer {
   padding: 0 2em;
 }
 header {
-  @apply prose pt-14 pb-5 mb-1 md:container md:mx-auto;
+  @apply prose pt-14 pb-3 md:container md:mx-auto;
 }
 .logo {
   font-size: 2em;
