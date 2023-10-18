@@ -55,6 +55,20 @@
         -->
       </div>
     </div>
+
+    <div class="skills">
+      <h4>Tools I've played around</h4>
+      <div
+        v-for="(skill, sIndex) in played_skills"
+        :key="'backendskills-'+sIndex"
+        class="item"
+      >
+        <h5>{{ skill.name }}</h5>
+        <!--
+        <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
+        -->
+      </div>
+    </div>
   </main>
 </template>
 
@@ -100,6 +114,15 @@ export default {
         { name: 'Bash', progress: '30' },
         { name: 'Vim' }
       ],
+      played_skills: [
+        { name: 'React.js', progress: '30' },
+        { name: 'Apollo GraphQL', progress: "50"},
+        { name: 'MongoDB', progress: '30' },
+        { name: 'Netlify/Netlify Functions', progress: '30' },
+        { name: 'D3.js', progress: '30' },
+        { name: 'Vuetify', progress: '30' },
+        { name: 'FaunaDB' }
+      ],
     }
   },
 }
@@ -107,7 +130,7 @@ export default {
 
 <style lang="postcss">
 .skills-tracker {
-  @apply container mx-auto grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 gap-12 pb-14 mb-14;
+  @apply container mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-1 gap-12 pb-14 mb-14;
 }
 .skills {
   @apply col-span-1 grid grid-cols-1 gap-4 content-start;
