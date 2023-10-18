@@ -83,8 +83,6 @@ export default {
         { name: 'CSS3', progress:"100" },
         { name: 'PostCSS', progress: '30' },
         { name: 'HTML5', progress: '60' },
-        { name: 'System Design' },
-        { name: 'Data Structure & Algorithm', progress: '40' },
         { name: 'PHP' },
         { name: 'Coffeescript' },
         { name: 'Ruby' },

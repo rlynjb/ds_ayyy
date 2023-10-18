@@ -9,8 +9,12 @@
       I’m a software engineer specializing in front-end with an objective of lead or fullstack development. Currently, I’m focused on building internal apps, extending features, refactoring, and rewriting code on existing applications used by employees at Switch and have gained about 6 years working in a collaborative team.
     </p>
 
+    <p>
+      My goal is to be proficient in <b>System Designs</b> and <b>Data Structure and Algorithms</b>. And..
+    </p>
+
     <h5 class="skills-title">
-      Below are languages, frameworks, tools, etc I've touched over the years..
+      below are languages, frameworks, tools I've touched over the years..
     </h5>
   </header>
 
