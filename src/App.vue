@@ -10,7 +10,7 @@
     </p>
 
     <h5 class="skills-title">
-      Below are skills I've gained over the years..
+      Below are languages, frameworks, tools, etc I've touched over the years..
     </h5>
   </header>
 
