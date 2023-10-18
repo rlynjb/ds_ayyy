@@ -10,7 +10,7 @@
     </p>
 
     <h5 class="skills-title">
-      Below are skills I've gained over the years I've worked in the field
+      Below are skills I've gained over the years..
     </h5>
   </header>
 
@@ -18,7 +18,7 @@
 
   <div class="wrapper md:container sm:container md:mx-auto">
     <h5 class="projects-title">
-      and these are some projects I've built and worked with other developers.
+      and these are some projects I've built and worked with other developers..
     </h5>
     <div class="projects">
       <div class="card bg-base-100 shadow-xl image-full"
@@ -47,7 +47,7 @@
       :content="project"
     />
 
-    <h2 class="exp-title">Here's some of my exprience</h2>
+    <h2 class="exp-title">Here's some of my exprience..</h2>
     <div class="brief-experience">
       <div
         v-for="(exp, expIndex) in experience"
@@ -110,50 +110,28 @@ export default {
           company: 'Switch',
           date: 'August 2017 - Present // Las Vegas, NV',
           desc: [
-            'Develop internal apps using Vue.js consuming and handling thousands of data.',
-            'Communicate with developers & managers on a daily basis to build features from ideation to production.',
-            'Built impressive landing pages using CSS responsive techniques and design concepts',
-            'Occasionally design UI/UX based on project requirements.',
-            'Occasionally maintain customer facing websites using Wordpress.'
+            'Knowledge of development and deployment pipeline.',
+            'Knowledge of development history of existing applications.',
+            'Collaborate with back-end developers.',
+            'Implement back-end APIs in front-end apps.',
+            'Communicate with managers for project requirements.',
+            'Trained new hires',
+            'Reversed engineer and documented existing applications using knowledge of UML System Design.',
+            'Projects I took ownership (See resume for full description..)', 
           ]
         },
         {
           company: 'JS Products',
           date: 'June 2016 - August 2017 // Las Vegas, NV',
           desc: [
-            'Developed all public facing websites for stakeholders using Grav, Laravel, Zurb Foundation.',
-            'Collaborated with UI/UX Designers using InVision while helping the company keep up to date with current web technology.',
-            'Developed a theme starter kit and implemented it on projects.',
-            'Developed a customer-facing web app for Kobalttools.com using JavaScript.'
+            'Developed impressive public facing websites using Grav, Laravel, Zurb Foundation.',
+            'Collaborated with stakeholders for updates and changes of their websites.',
+            'Collaborated with UI/UX Designers using InVision.',
+            'Helped the company keep up to date with current web technology.',
+            'Developed a theme starter kit that is customed to company’s design guideline.',
+            'Developed a “Personlized your Ratchet Set” web app for Kobalttools.com using JavaScript.'
           ]
         },
-        /*
-        {
-          company: 'Brydan Solutions',
-          date: 'April 2015 - June 2016 // Las Vegas, NV',
-          desc: [
-            "Designed websites using Divi theme and researched plugins that fit required functionality.",
-            "Developed a customer-facing web app using JavaScript and PHP when necessary.",
-            "Clients included Golden Entertainment (goldent.com), PT’s Pub Las Vegas (pteglv.com)"
-          ]
-        },
-        {
-          company: 'Gravitas Works',
-          date: 'May 2014 - March 2015 // Las Vegas, NV',
-          desc: [
-            "Gained coding experience through pair programming and guidance from our mentor/CTO",
-            "Worked on solving bugs/performance issues",
-            "Documented work and communicate issues when they arise",
-            "Researched and wrote code snippet Google authentication using Golang and JWT",
-            "Wrote code using Golang to interact with APIs",
-            "Wrote code for Web scraper using Ruby and Regex",
-            "Convert Ember.js web application to use Ember-CLI",
-            "Researched latest news/articles and version releases of Ember.js",
-            "Wrote a responsive grid system from scratch to avoid bloated CSS",
-            "Researched and implemented BEM and OOCSS to organize CSS"
-          ]
-        }
-        */
       ],
     }
   },
@@ -199,7 +177,7 @@ footer {
   padding: 0 2em;
 }
 header {
-  @apply prose pt-14 pb-5 mb-3 md:container md:mx-auto;
+  @apply prose pt-14 pb-5 mb-1 md:container md:mx-auto;
 }
 .logo {
   font-size: 2em;
