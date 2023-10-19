@@ -10,7 +10,7 @@
     </p>
 
     <p>
-      My goal is to be proficient in <b>System Designs</b> and <b>Data Structure and Algorithms</b>. And..
+      My goal is to be really good in <b>System Designs</b> and <b>Data Structure and Algorithms</b>. And..
     </p>
 
     <h5 class="skills-title">
