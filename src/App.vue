@@ -3,17 +3,18 @@
     <div class="logo">
       <h3>hello, i'm </h3>
       <h1>rein.</h1>
+      <br/>
       <h5>a software engineer specializing in front-end</h5>
     </div>
     <p>
       I’m a software engineer specializing in front-end with an objective of lead or fullstack development. Currently, I’m focused on building internal apps, extending features, refactoring, and rewriting code on existing applications used by employees at Switch and have gained about 6 years working in a collaborative team.
     </p>
 
-    <p>
-      My goal is to be really good in <b>System Designs</b> and <b>Data Structure and Algorithms</b>. And..
-    </p>
-
     <h5 class="skills-title">
+      <sub class="text-secondary">
+        My goal is to be really good in <b>System Design</b> and <b>Data Structure and Algorithms</b>.
+      </sub>
+      <br/>
       below are languages, frameworks, tools I've touched over the years..
     </h5>
   </header>
@@ -209,7 +210,7 @@ main {
 }
 .projects-title {
   @apply text-primary;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 1em 1em;
 }
 .projects {
@@ -227,7 +228,7 @@ main {
 
 .exp-title {
   @apply text-primary;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 4em 1em 0;
 }
 .exp-resume {
