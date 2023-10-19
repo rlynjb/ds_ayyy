@@ -3,8 +3,6 @@
     <div class="logo">
       <h3>hello, i'm </h3>
       <h1>rein.</h1>
-      <br/>
-      <h5>a software engineer specializing in front-end</h5>
     </div>
     <p>
       I’m a software engineer specializing in front-end with an objective of lead or fullstack development.
