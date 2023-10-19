@@ -7,7 +7,7 @@
       <h5>a software engineer specializing in front-end</h5>
     </div>
     <p>
-      I’m a software engineer specializing in front-end with an objective of lead or fullstack development. Currently, I’m focused on building internal apps, extending features, refactoring, and rewriting code on existing applications used by employees at Switch and have gained about 6 years working in a collaborative team.
+      I’m a software engineer specializing in front-end with an objective of lead or fullstack development.
     </p>
 
     <h5 class="skills-title">
