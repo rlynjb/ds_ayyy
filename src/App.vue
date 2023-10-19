@@ -5,9 +5,10 @@
       <h1>rein.</h1>
     </div>
     <p>
-      I’m a software engineer specializing in front-end with an objective of lead or fullstack development.
+      I’m a software engineer specializing in front-end with an objective of lead or fullstack development. My goal is to be really good in <b>System Design</b> and <b>Data Structure and Algorithms</b>. Below are languages, frameworks, tools I've touched over the years..
     </p>
 
+<!--
     <h5 class="skills-title">
       <sub class="text-secondary">
         My goal is to be really good in <b>System Design</b> and <b>Data Structure and Algorithms</b>.
@@ -15,6 +16,7 @@
       <br/>
       below are languages, frameworks, tools I've touched over the years..
     </h5>
+    -->
   </header>
 
   <RouterView />
