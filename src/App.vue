@@ -7,96 +7,90 @@
     <p>
       I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. Below are languages, frameworks, tools I've touched over the years..
     </p>
-
-<!--
-    <h5 class="skills-title">
-      <sub class="text-secondary">
-        My goal is to be really good in <b>System Design</b> and <b>Data Structure and Algorithms</b>.
-      </sub>
-      <br/>
-      below are languages, frameworks, tools I've touched over the years..
-    </h5>
-    -->
   </header>
 
   <RouterView />
 
   <div class="wrapper md:container sm:container md:mx-auto">
-    <h2 class="exp-title">Here's some of my exprience..</h2>
-    <div class="brief-experience">
-      <div
-        v-for="(exp, expIndex) in experience"
-        :key="'exp-'+expIndex"
-        class="exp"
-      >
-        <h3>{{ exp.company }}</h3>
-        <h6>{{ exp.date }}</h6>
-        <ul>
-          <li
-            v-for="(desc, descIndex) in exp.desc"
-            :key="'desc-'+descIndex"
-          >
-            {{ desc }}
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <h2 class="exp-resume">
-      and for complete history, here's my
-      <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
-        target="_blank"
-        class="text-primary"
-      >
-        Resume &#10003;
-      </a>
-    </h2>
-
-    <h5 class="exp-contact">
-      I’m currently looking for new opportunities, preferably remote and looking forward to accepting projects.<br/>
-      If you have a question or just want to say hi, feel free to contact me via
-      <a href="https://www.linkedin.com/in/rlynpro/"
-        target="_blank"
-        class="text-primary"
-      >
-        LinkedIn &#10003;
-      </a>
-    </h5>
-
-<h5 class="projects-title">
-      and these are some projects I've built and worked with other developers..
-    </h5>
-    <div class="projects">
-      <div class="card bg-base-100 shadow-xl image-full rounded-none"
-        v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
-      >
-        <figure><img :src="imageURL(project.image_thumb)" /></figure>
-        <div class="card-body p-3">
-          <h2 class="card-title">{{ project.title }}</h2>
-          <p class="card-subtitle">{{ project.subtitle }}</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-secondary btn-xs rounded-none"
-              @click="gotoLink(project.link)"
+    <section>
+      <h2 class="exp-title">Here's some of my exprience..</h2>
+      <div class="brief-experience">
+        <div
+          v-for="(exp, expIndex) in experience"
+          :key="'exp-'+expIndex"
+          class="exp"
+        >
+          <h3>{{ exp.company }}</h3>
+          <h6>{{ exp.date }}</h6>
+          <ul>
+            <li
+              v-for="(desc, descIndex) in exp.desc"
+              :key="'desc-'+descIndex"
             >
-              Visit
-            </button>
-            <button class="btn btn-secondary btn-xs rounded-none"
-              @click="openNotes(project)"
-            >
-              How I built it
-            </button>
-          </div>
+              {{ desc }}
+            </li>
+          </ul>
         </div>
       </div>
-    </div><!-- /projects -->
-    <Modal
-      :content="project"
-    />
+    </section>
 
-  </div>
+    <section>
+      <h2 class="exp-resume">
+        and for complete history, here's my
+        <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
+          target="_blank"
+          class="text-primary"
+        >
+          Resume &#10003;
+        </a>
+      </h2>
 
-  <footer>
-  </footer>
+      <h5 class="exp-contact">
+        I’m currently looking for new opportunities, preferably remote and looking forward to accepting projects.<br/>
+        If you have a question or just want to say hi, feel free to contact me via
+        <a href="https://www.linkedin.com/in/rlynpro/"
+          target="_blank"
+          class="text-primary"
+        >
+          LinkedIn &#10003;
+        </a>
+      </h5>
+    </section>
+
+    <section>
+      <h5 class="projects-title">
+        and these are some projects I've built and worked with other developers..
+      </h5>
+      <div class="projects">
+        <div class="card bg-base-100 shadow-xl image-full rounded-none"
+          v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
+        >
+          <figure><img :src="imageURL(project.image_thumb)" /></figure>
+          <div class="card-body p-3">
+            <h2 class="card-title">{{ project.title }}</h2>
+            <p class="card-subtitle">{{ project.subtitle }}</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-secondary btn-xs rounded-none"
+                @click="gotoLink(project.link)"
+              >
+                Visit
+              </button>
+              <button class="btn btn-secondary btn-xs rounded-none"
+                @click="openNotes(project)"
+              >
+                How I built it
+              </button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /projects -->
+      <Modal
+        :content="project"
+      />
+    </section>
+  </div><!-- /wrapper -->
+
+  <footer />
 </template>
 
 <script lang="ts">
@@ -186,7 +180,7 @@ footer {
   padding: 0 2em;
 }
 header {
-  @apply prose pt-14 pb-3 md:container md:mx-auto;
+  @apply prose pt-3 pb-1 md:container md:mx-auto;
 }
 .logo {
   font-size: 2em;
@@ -201,8 +195,9 @@ header {
 .logo h1 {
   @apply text-primary;
 }
-main {
-  @apply pt-8 pb-12;
+
+.wrapper section {
+  @apply mb-20;
 }
 
 .skills-title {
