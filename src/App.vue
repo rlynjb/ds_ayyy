@@ -22,36 +22,6 @@
   <RouterView />
 
   <div class="wrapper md:container sm:container md:mx-auto">
-    <h5 class="projects-title">
-      and these are some projects I've built and worked with other developers..
-    </h5>
-    <div class="projects">
-      <div class="card bg-base-100 shadow-xl image-full rounded-none"
-        v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
-      >
-        <figure><img :src="imageURL(project.image_thumb)" /></figure>
-        <div class="card-body p-3">
-          <h2 class="card-title">{{ project.title }}</h2>
-          <p class="card-subtitle">{{ project.subtitle }}</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-secondary btn-xs rounded-none"
-              @click="gotoLink(project.link)"
-            >
-              Visit
-            </button>
-            <button class="btn btn-secondary btn-xs rounded-none"
-              @click="openNotes(project)"
-            >
-              How I built it
-            </button>
-          </div>
-        </div>
-      </div>
-    </div><!-- /projects -->
-    <Modal
-      :content="project"
-    />
-
     <h2 class="exp-title">Here's some of my exprience..</h2>
     <div class="brief-experience">
       <div
@@ -92,6 +62,37 @@
         LinkedIn &#10003;
       </a>
     </h5>
+
+<h5 class="projects-title">
+      and these are some projects I've built and worked with other developers..
+    </h5>
+    <div class="projects">
+      <div class="card bg-base-100 shadow-xl image-full rounded-none"
+        v-for="(project, projectIndex) in projects" :key="'project'+projectIndex"
+      >
+        <figure><img :src="imageURL(project.image_thumb)" /></figure>
+        <div class="card-body p-3">
+          <h2 class="card-title">{{ project.title }}</h2>
+          <p class="card-subtitle">{{ project.subtitle }}</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-secondary btn-xs rounded-none"
+              @click="gotoLink(project.link)"
+            >
+              Visit
+            </button>
+            <button class="btn btn-secondary btn-xs rounded-none"
+              @click="openNotes(project)"
+            >
+              How I built it
+            </button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /projects -->
+    <Modal
+      :content="project"
+    />
+
   </div>
 
   <footer>
