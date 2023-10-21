@@ -83,7 +83,8 @@
     </h2>
 
     <h5 class="exp-contact">
-      I’m currently looking for new opportunities, preferably outside of Las Vegas. If you have a question or just want to say hi, feel free to contact me via
+      I’m currently looking for new opportunities, preferably remote and looking forward to accepting projects.<br/>
+      If you have a question or just want to say hi, feel free to contact me via
       <a href="https://www.linkedin.com/in/rlynpro/"
         target="_blank"
         class="text-primary"
