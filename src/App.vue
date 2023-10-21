@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="bg-zinc-800 p-6">
       <h2 class="exp-resume">
         and for complete history, here's my
         <a href="https://docs.google.com/document/d/1LOO_sdXimhxD43TeWSkoZbqASsT3B68l9YAdkyxmwNU/edit?usp=share_link"
@@ -230,14 +230,12 @@ header {
 }
 .exp-resume {
   font-size: 1.5em;
-  margin: 2em 1em 0.5em;
 }
 .exp-resume a {
   font-weight: 700;
 }
 .exp-contact {
   font-size: 1.3em;
-  margin: 0 1.2em;
 }
 .exp-contact a {
   font-weight: 700;
