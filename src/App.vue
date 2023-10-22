@@ -58,7 +58,7 @@
 
     <section>
       <h5 class="projects-title">
-        and these are some projects I've built and worked with other developers..
+        and some projects I've worked on..
       </h5>
       <div class="projects">
         <div class="card bg-base-100 shadow-xl image-full rounded-none"
