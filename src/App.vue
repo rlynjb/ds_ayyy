@@ -1,9 +1,8 @@
 <template>
   <header>
-    <div class="logo">
-      <h3>hello, i'm </h3>
-      <h1>rein.</h1>
-    </div>
+    <h2 class="logo">
+      hello, i'm <b class="text-primary">rein.</b>
+    </h2>
     <p>
       I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. Below are languages, frameworks, tools I've touched over the years..
     </p>
@@ -183,17 +182,7 @@ header {
   @apply prose pt-3 pb-1 md:container md:mx-auto;
 }
 .logo {
-  font-size: 2em;
-}
-.logo h1,
-.logo h3,
-.logo h5 {
-  @apply mr-6 mb-0;
-  display: inline-block;
-  line-height: 1;
-}
-.logo h1 {
-  @apply text-primary;
+  font-size: 3em;
 }
 
 .wrapper section {
