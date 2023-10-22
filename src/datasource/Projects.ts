@@ -43,6 +43,7 @@ export const Projects = [
       'storybook_plan.png'
     ]
   },
+  /*
   {
     title: 'Golden Entertainment',
     subtitle: 'Wordpress',
@@ -55,6 +56,7 @@ export const Projects = [
     link: 'https://www.ptstaverns.com/',
     image_thumb: 'ptstavern.png',
   },
+  */
   {
     title: 'Persopo - Public Record Search',
     subtitle: 'Ember.js, Golang',
