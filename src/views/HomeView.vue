@@ -93,7 +93,7 @@ export default {
         { name: 'Emberjs', progress: '30' },
         { name: 'Tailwind/DaisyUI', progress: '30' },
         { name: 'Nuxt3', progress: '70' },
-        { name: 'TailwindCSS/DaisyUI', progress: '90' },
+        { name: 'Pinia', progress: '90' },
         { name: 'Quasar Framework', progress: '70' },
         { name: 'Grav', progress: "50" },
         { name: 'Zurb Foundation', progress: '30' },
