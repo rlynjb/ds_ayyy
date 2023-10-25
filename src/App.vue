@@ -4,13 +4,7 @@
       hello, i'm <b class="text-primary">rein.</b>
     </h2>
     <p>
-      I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. I have about 6+ years experience with common front-end technologies such as:
-      <ul>
-        <li>JavaScript/ES6</li>
-        <li>HTML/CSS</li>
-        <li>Node</li>
-        <li>Vue</li>
-      </ul>
+      I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. I have about 6+ years experience with common front-end technologies such as: <b>JavaScript/ES6</b>, <b>HTML/CSS</b>, <b>Vue</b>, <b>Node</b>.
     </p>
     <p>
         Below are languages, frameworks, tools I've touched over the years..
