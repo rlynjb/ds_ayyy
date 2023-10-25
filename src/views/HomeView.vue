@@ -78,11 +78,8 @@ export default {
   data() {
     return {
       coding_skills: [
-        { name: 'JavaScript ES6', progress: '100' },
         { name: 'Typescript', progress: "100" },
-        { name: 'CSS3', progress:"100" },
         { name: 'PostCSS', progress: '30' },
-        { name: 'HTML5', progress: '60' },
         { name: 'PHP' },
         { name: 'Coffeescript' },
         { name: 'Ruby' },
