@@ -11,10 +11,7 @@
       I've also gained experience of <b>development and deployment pipeline</b> usings tools such as: <b class="text-primary">Git</b>, <b class="text-primary">Vim/Bash</b>, <b class="text-primary">Gitlab</b> for code reviews. And <b class="text-primary">Rancher/Nerdctrl or Docker CLI</b>, <b class="text-primary">Jenkins</b> to push code/features to dev and production. 
     </p>
     <p>
-      My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>.
-    </p>
-    <p>
-        Below are additional languages, frameworks, tools I've touched over the years..
+      My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. Also, below are additional languages, frameworks, tools I've touched over the years..
     </p>
   </header>
 
