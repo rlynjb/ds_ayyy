@@ -5,9 +5,10 @@
     </h2>
     <p>
       I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. I have about 6+ years experience with common front-end technologies such as: <b>JavaScript/ES6</b>, <b>HTML/CSS</b>, <b>Vue</b>, <b>Node</b>.
+      And have worked within a software development team, using <b>JIRA</b>, daily stand ups, and weekly meetings.
     </p>
     <p>
-        Below are languages, frameworks, tools I've touched over the years..
+        Below are additional languages, frameworks, tools I've touched over the years..
     </p>
   </header>
 
