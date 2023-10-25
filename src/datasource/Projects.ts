@@ -33,6 +33,7 @@ export const Projects = [
       'spacex_apollo_graphql.png'
     ]
   },
+  /*
   rein_portfolio,
   {
     title: 'Kobalt Tools - Personalized Ratchet Set',
@@ -43,7 +44,6 @@ export const Projects = [
       'storybook_plan.png'
     ]
   },
-  /*
   {
     title: 'Golden Entertainment',
     subtitle: 'Wordpress',
