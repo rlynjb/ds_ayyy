@@ -6,6 +6,7 @@
     <p>
       I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>. I have about 6+ years experience with common front-end technologies such as: <b>JavaScript/ES6</b>, <b>HTML/CSS</b>, <b>Vue</b>, <b>Node</b>.
       And have worked within a software development team, using <b>JIRA</b>, daily stand ups, and weekly meetings.
+      I've also gained knowledge of development and deployment pipeline usings tools such as: <b>Git</b>, <b>Vim/Bash</b>, <b>Gitlab</b>, <b>Rancher/Nerdctrl or Docker CLI</b>, <b>Jenkins</b> to push code/features to dev and production. 
     </p>
     <p>
         Below are additional languages, frameworks, tools I've touched over the years..
