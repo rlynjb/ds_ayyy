@@ -43,20 +43,6 @@
     </div>
 
     <div class="skills">
-      <h4>Deployment Pipeline</h4>
-      <div
-        v-for="(skill, sIndex) in deployment_skills"
-        :key="'backendskills-'+sIndex"
-        class="item"
-      >
-        <h5>{{ skill.name }}</h5>
-        <!--
-        <progress v-if="skill.progress" class="progress progress-primary" :value="skill.progress" max="100"></progress>
-        -->
-      </div>
-    </div>
-
-    <div class="skills">
       <h4>Tools I've played around</h4>
       <div
         v-for="(skill, sIndex) in played_skills"
@@ -100,6 +86,7 @@ export default {
         { name: 'Laravel', progress: "50"},
         { name: 'Wordpress (Monolith architecture)', progress: '30' }
       ],
+      /*
       deployment_skills: [
         { name: 'Git', progress: "50"},
         { name: 'Gitlab', progress: '30' },
@@ -110,6 +97,7 @@ export default {
         { name: 'Bash', progress: '30' },
         { name: 'Vim' }
       ],
+      */
       played_skills: [
         { name: 'React.js', progress: '30' },
         { name: 'Apollo GraphQL', progress: "50"},
@@ -126,7 +114,7 @@ export default {
 
 <style lang="postcss">
 main.skills-tracker {
-  @apply container mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-1 gap-6;
+  @apply container mx-auto grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 gap-6;
 }
 .skills {
   @apply col-span-1 grid grid-cols-1 gap-4 content-start;
