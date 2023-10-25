@@ -106,6 +106,7 @@ export default {
       deployment_skills: [
         { name: 'Git', progress: "50"},
         { name: 'Gitlab', progress: '30' },
+        { name: 'JIRA', progress: "50"},
         { name: 'Docker CLI', progress: '30' },
         { name: 'Rancher/Nerdctl CLI', progress: '30' },
         { name: 'Jenkins', progress: '30' },
