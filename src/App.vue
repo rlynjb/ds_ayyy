@@ -4,12 +4,14 @@
       hello, i'm <b class="text-primary">rein.</b>
     </h2>
     <p>
-      I’m a software engineer specializing in front-end with an objective of lead. My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>.<br>
-      I have about 6+ years professional experience with common <b>front-end technologies</b> such as: <b class="text-primary">JavaScript/ES6</b>, <b class="text-primary">HTML/CSS</b>, <b class="text-primary">Vue</b>, <b class="text-primary">Node</b>.
+      I’m a software engineer specializing in front-end with an objective of lead. I have about 6+ years professional experience with common <b>front-end technologies</b> such as: <b class="text-primary">JavaScript/ES6</b>, <b class="text-primary">HTML/CSS</b>, <b class="text-primary">Vue</b>, <b class="text-primary">Node</b>.
       And have worked within a <b>software development team</b>, using <b class="text-primary">JIRA</b>, daily stand ups, and weekly meetings.
     </p>
     <p>
       I've also gained experience of <b>development and deployment pipeline</b> usings tools such as: <b class="text-primary">Git</b>, <b class="text-primary">Vim/Bash</b>, <b class="text-primary">Gitlab</b> for code reviews. And <b class="text-primary">Rancher/Nerdctrl or Docker CLI</b>, <b class="text-primary">Jenkins</b> to push code/features to dev and production. 
+    </p>
+    <p>
+      My goal is to be really good in <b class="text-primary">System Design</b> and <b class="text-primary">Data Structure and Algorithms</b>.
     </p>
     <p>
         Below are additional languages, frameworks, tools I've touched over the years..
