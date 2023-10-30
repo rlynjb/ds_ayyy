@@ -16,9 +16,9 @@ import { badbeesh } from "./badbeesh"
 
 export const Projects = [
   {
-    title: 'UI Component Design System',
-    subtitle: 'System Design, DSA, Vue3, TailwindCSS, DaisyUI, Storybook, Netlify',
-    link: 'https://ui-styleguide.netlify.app/',
+    title: 'UI Design System',
+    subtitle: 'System Design, DSA, Vue3, TailwindCSS, DaisyUI, Github Pages, Vue Styleguidist',
+    link: 'https://rlynjb.github.io/uids/',
     image_thumb: 'ui_system_design.png',
     images: [
       'storybook_plan.png'
